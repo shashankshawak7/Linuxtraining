@@ -1,0 +1,60 @@
+root => /
+root is starting point of the operating system
+
+
+
+cd <directory name>: - change directory 
+##for example
+cd dev
+#where am i in the operating system
+pwd( present working directory)
+
+# go to previous directory 
+cd ..
+
+#go to root directory
+cd /
+
+## command
+command -arguments
+ls -lrt
+list files -longlisting(with information)reverse with time
+
+
+shashank@LAPTOP-C31QODQB:/$ ls -rlt
+total 620
+lrwxrwxrwx  1 root root      7 Feb 20 05:18 bin -> usr/bin (link,shortcut )
+lrwxrwxrwx  1 root root      8 Feb 20 05:18 sbin -> usr/sbin
+lrwxrwxrwx  1 root root      9 Feb 20 05:18 lib32 -> usr/lib32
+lrwxrwxrwx  1 root root      7 Feb 20 05:18 lib -> usr/lib
+lrwxrwxrwx  1 root root     10 Feb 20 05:18 libx32 -> usr/libx32
+lrwxrwxrwx  1 root root      9 Feb 20 05:18 lib64 -> usr/lib64
+drwxr-xr-x  1 root root    512 Feb 20 05:18 srv ( d is directory)
+drwxr-xr-x  1 root root    512 Feb 20 05:18 media
+drwxr-xr-x  1 root root    512 Feb 20 05:20 usr
+drwxr-xr-x  1 root root    512 Feb 20 05:21 var
+drwxr-xr-x  1 root root    512 Feb 20 05:22 snap
+drwxr-xr-x  1 root root    512 Feb 20 05:26 boot
+-rwxr-xr-x  1 root root 632048 Mar 27 11:24 init (- is file)
+drwxr-xr-x  1 root root    512 Mar 27 19:08 mnt
+drwxr-xr-x  1 root root    512 Mar 27 19:09 home
+drwx------  1 root root    512 Apr  3 01:00 root
+drwxrwxrwt  1 root root    512 Apr  3 01:11 tmp
+drwxrwxrwx  1 root root    512 Apr  3 03:02 opt
+dr-xr-xr-x 12 root root      0 Apr  5 21:13 sys
+dr-xr-xr-x  9 root root      0 Apr  5 21:13 proc
+drwxr-xr-x  1 root root    512 Apr  5 21:13 etc
+drwxr-xr-x  1 root root    512 Apr  5 21:13 dev
+drwxr-xr-x  1 root root    512 Apr  5 21:48 run
+drwxr-xr-x  1 root root    512 Apr  5 21:52 abc
+
+
+
+l -> link
+d -> directory
+- -> normal file
+b -> binary file
+c -> clob file
+
+
+
