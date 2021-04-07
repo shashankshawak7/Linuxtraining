@@ -54,6 +54,30 @@ group change:
         
  check all groups :     
                 cat /etc/group
+                
+ls -lrta 
+a -> hidden files
+t -> sort by time
+r -> reverse
+l -> long listing 
+
+ls -> listing command
+
+
+
+hidden files which start with a <.>
+
+. -> present directory ( saved for system)
+
+.. -> previous directory ( saved and created for system)
+
+
+
+sudo -> super user do 
+
+
+
+
  
  
     
