@@ -1,0 +1,62 @@
+shashank@LAPTOP-C31QODQB:/abc$ ls -rtl
+total 0
+-rw-r--r-- 1 shashank shashank   0 Apr  5 21:51 x
+-rw-r--r-- 1 root     root       0 Apr  5 21:51 y
+drwxr-xr-x 1 root     root     512 Apr  5 21:51 xyz
+drwxr-xr-x 1 root     root     512 Apr  5 21:52 yzh
+
+#permissions 
+user ,group, public 
+rwxrwxrwx
+
+r -> read
+w -> write
+x -> execute
+1. rwx -> user/owner permission
+2. rwx -> group (owner/more users)
+3. rwx -> public 
+
+#how to give permission
+    
+    
+    111 -> 7
+    110 -> 6
+    101 -> 5
+    100-> 4
+    011 -> 3
+    010 -> 2
+    001 -> 1
+
+1. if owner can read write and execute
+    group can only read and execute 
+    public can only read
+    
+    rwx r-x r-- 
+    111  101  100
+    7    5    4
+
+ 
+command: chmod <permission> <file/folder name>
+      example : chmod 754 x
+
+<=======================================================>
+
+
+change owner:
+    who can change the owner?
+      only owner can change the owner
+      command:      chown <new owner name> <file/folder name>
+      example: chown shashank x
+      
+group change: 
+        chgrp <new group name> <file/folder name>
+        example : chgrp shashank y
+        
+ check all groups :     
+                cat /etc/group
+ 
+ 
+    
+    
+
+
