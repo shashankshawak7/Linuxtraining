@@ -1,0 +1,102 @@
+#sudo 
+
+super user do 
+
+
+# password file for user details
+sudo cat /etc/passwd
+
+
+shashank:x:1000:1000:,,,:/home/shashank:/bin/bash
+<user>:x:<user id uid>:<group id GID>:,,,:home directory:<shell>
+
+shells
+
+bash shell  /bin/bash
+korn shell  /bin/ksh
+zshell      /bin/zsh
+cshell      /bin/csh
+
+#file folder handling
+
+1. mkdir  cde
+   make directory 
+  2. mkdir -p abc/cde/efg/hij/klm
+      abc
+        -> cde
+              -> efg
+                    -> hij
+                          ->klm
+                    
+                    
+ create file:
+      1. cat > filename
+          my name is shashank 
+          command:enter
+          command:ctrl+c
+           
+           for override or create file from scratch(deletes old data)
+          
+        2. cat >> filename 
+            command:enter
+            command:ctrl+c
+            
+            for append or adding data below
+                    
+         3. cat filename
+         
+            to read the file
+         
+         4. cat -n filename
+            with line number
+            
+            
+          Note: >> is called redirection operator
+          
+          cat file1 file2 .. filen >> newfile
+        
+        5. touch creates an empty file
+            touch <filename>
+            
+        6. nano <filename>
+        
+        7. vi filename 
+             press i to get into insert mode
+             insert whatever you want
+             
+             then press ESC button
+             then :wq! to save the file with data
+             also :q! to not save the changes
+             
+        
+        
+      #deletion of fils and directories
+      file deletion
+                
+                rm <filename>
+      # to delete empty directry 
+            rmdir <directory name>
+            
+            
+        rm -r <directory name>
+         remove    recursive  directory 
+         
+         rm -ir <directory name>
+          remove   interactive recursive directory name
+        
+     #
+        #dont use very much 
+        rm -rf <directory name>
+         
+         
+         
+      
+    
+          
+          
+
+
+
+
+
+
