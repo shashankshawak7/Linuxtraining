@@ -1,0 +1,53 @@
+Environment Variables
+
+echo means Printing on the screen.
+$ means variable or in wildcard it means end.
+
+command:  env ( show environment variables)
+Path variable: echo $PATH
+
+to run any script
+1. bash <script name>
+2. . <script name>
+
+
+For each user there are two files for login 
+if shell is bash
+  1. .bashrc
+  3. .bash_profile
+  
+  these files are executed when user logs in and can be executed manually also.
+  
+  
+  
+  #############################################################################
+  
+  commands
+  
+  installation in linux
+  
+  ubuntu: 
+  
+      apt-get install <software name>
+      
+  redhat:
+          rpm install <software name>
+          
+  #man <command name> for help
+   
+    
+   
+   for copy
+   
+   cp <source file> <destination file>
+   cp -r <source directory> <destionation directory>
+   
+   for move
+   
+   mv <source file/directory> <destination file/directory>
+   
+   
+      
+
+  
+ 
