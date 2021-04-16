@@ -4,6 +4,7 @@ GREP
 PS 
 CURL
 crontab
+cut
 
 Scripting
 
@@ -13,4 +14,29 @@ Scripting
 2. create user
   sudo useradd 
   
-3. 
+3. GREP
+
+    |  pipe 
+    
+    
+  <command >|grep <search string>
+  ls -lrt|grep subh
+  
+  recursive search
+  grep -r <search string>
+  
+2. find 
+
+
+find <from where> -name <what is the name>
+
+find . -name subh
+
+
+3. cut command
+  
+  
+  
+  
+  
+
