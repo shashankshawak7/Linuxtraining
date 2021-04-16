@@ -6,3 +6,11 @@ CURL
 crontab
 
 Scripting
+
+
+1. SU     switch user 
+
+2. create user
+  sudo useradd 
+  
+3. 
