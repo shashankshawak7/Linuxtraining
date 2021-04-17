@@ -1,0 +1,121 @@
+
+CURL
+
+orphan process
+
+
+parent process
+       |
+ -------------------
+ |      |          |
+ child1  child 2   child 3
+shashank@LAPTOP-C31QODQB:~$ ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 20:52 ?        00:00:00 /init
+root         6     1  0 20:52 tty1     00:00:00 /init
+shashank     7     6  0 20:52 tty1     00:00:00 -bash
+shashank    51     7  0 20:59 tty1     00:00:00 ps -ef
+
+username processid parentprocessid  start time TTYshell  time and command
+
+
+shashank@LAPTOP-C31QODQB:~$ ps -ef|grep shashank
+shashank     7     6  0 20:52 tty1     00:00:00 -bash
+shashank    86     7  0 21:10 tty1     00:00:00 ps -ef
+shashank    87     7  0 21:10 tty1     00:00:00 grep --color=auto shashank
+
+ps (process)
+e -> extended
+f -> formatted
+
+kill <PID>    kill at instant
+kill -9 <PID>  abruptly kill
+kill -10 <PID>  gracefully kill 
+
+
+
+TOP -> process (ctrl c to get out , shift+m short by memory)
+
+|_> when running a script 
+  CTRL+Z suspends the script  and sends it to background
+  CTRL+C terminates the script
+  
+  to bring script in foreground 
+  command -> fg %script number
+  
+            fg %1
+            fg %2
+            fg %3
+            
+         to send a script to backend 
+         bash jasmine.sh &
+         
+         
+
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt
+subh;29;male
+shashank;30;male
+jasmine;26;female
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt |cut -d';' -f1
+subh
+shashank
+jasmine
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt |cut -d';' -f2
+29
+30
+26
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt |cut -d';' -f1-2
+subh;29
+shashank;30
+jasmine;26
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt |cut -d';' -f1,3
+subh;male
+shashank;male
+jasmine;female
+shashank@LAPTOP-C3
+            
+            
+============================================================================================================
+ 
+sed -> stream editor 
+
+command:  sed 's/<search string>/<substitute string>/g'  filename
+          sed -i 's/<search string>/<substitute string>/g' filename
+          
+          
+
+g is for global
+if there is no g it will only replace first occurance of each line
+
+
+
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt
+subh;29;male
+shashank;30;male
+jasmine;26;female
+shashank@LAPTOP-C31QODQB:~$ sed  's/male/female/' delim.txt
+subh;29;female
+shashank;30;female
+jasmine;26;fefemale
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt
+subh;29;male
+shashank;30;male
+jasmine;26;female
+shashank@LAPTOP-C31QODQB:~$ sed  -i 's/male/female/' delim.txt
+shashank@LAPTOP-C31QODQB:~$ cat delim.txt
+subh;29;female
+shashank;30;female
+jasmine;26;fefemale
+
+
+
+crontab is scheduling of sript
+<to be done>
+
+
+
+ 
+ 
+ 
+ 
+ 
