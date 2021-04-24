@@ -1,0 +1,10 @@
+~ -> tilda --->   home directory  cd ~/desktop
+* star -> all -> rm *.tar *.zip
+# hash - comment
+$ dollar -> variables or to the last
+^ cap  -> start
+& ampersand  ->  backend process 
+#! -> shebang  ->  magic character  -> defines the shell into which the script will run
+#!/usr/bin/bash
+
+\ -> escape character -> removes the value of wildcard
